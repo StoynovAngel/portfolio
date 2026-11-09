@@ -99,7 +99,6 @@
         </dl>
         <div class="hero__cta reveal" style="--d:5">
           <a class="btn btn--solid js-copy-email" href="mailto:an.stoynov@gmail.com" data-email="an.stoynov@gmail.com">an.stoynov@gmail.com</a>
-          <a class="btn" href="tel:+359890504411">+359 89 050 4411</a>
           <a class="btn btn--accent" href="assets/angel-cv.pdf" download="Angel-Stoynov-CV.pdf">Download CV</a>
         </div>
       </div>
@@ -120,13 +119,13 @@
             <p class="role__when">Dec 2025 — Present</p>
           </div>
           <ul class="role__points">
-            <li>Shipped CSRF protection for the hana-oidc module, covering X.509 and Kerberos flows.</li>
+            <li>Shipped CSRF protection for the OIDC module, covering X.509 and Kerberos flows.</li>
             <li>Migrated the SBSS and XSUAA repositories to Java 21.</li>
-            <li>Patched a CVE in the production OIDC identity layer.</li>
-            <li>Fixed an OIDC X.509 config property mismatch and resolved an infrastructure regression.</li>
+            <li>Remediated a security vulnerability in the production identity layer.</li>
+            <li>Fixed an OIDC configuration mismatch and resolved an infrastructure regression.</li>
             <li>Assumed and migrated the SBSS CI/CD toolchain; wired JaCoCo coverage into the main pipeline.</li>
-            <li>Added Flyway retry logic for DB shortage during UAA startup.</li>
-            <li>Applied PSL-1 branch protection across five repositories.</li>
+            <li>Added startup resilience for database contention during service bootstrap.</li>
+            <li>Applied branch-protection policy across five repositories.</li>
             <li>Authored SAP Notes, platform-role docs for help.sap.com, and developer guides.</li>
           </ul>
         </article>
@@ -141,10 +140,10 @@
             <p class="role__when">Jun 2025 — Nov 2025</p>
           </div>
           <ul class="role__points">
-            <li>Identified a username-validation bypass in the HANA database.</li>
+            <li>Hardened username validation in the database authentication path.</li>
             <li>Built a paginated REST endpoint consumed by the XSA Cockpit.</li>
-            <li>Fixed a SAML provider name being overwritten on UAA restart.</li>
-            <li>Fixed a user-caching bug that produced stale auth state.</li>
+            <li>Fixed a SAML provider configuration lost on service restart.</li>
+            <li>Fixed a user-caching bug that produced stale authentication state.</li>
             <li>Decomposed a monolithic servlet initializer.</li>
           </ul>
         </article>
