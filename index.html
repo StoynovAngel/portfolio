@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Stoynov — Software &amp; Security Engineer</title>
+  <meta name="description" content="Angel Stoynov — backend and security engineer. Java, Spring Boot, OAuth2/OIDC and SAP HANA. Based in Sofia, Bulgaria." />
+  <meta name="theme-color" content="#0A0A0B" />
+  <meta property="og:url" content="https://stoynovangel.github.io/portfolio/" />
+  <link rel="canonical" href="https://stoynovangel.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta property="og:title" content="Angel Stoynov — Software &amp; Security Engineer" />
+  <meta property="og:description" content="Backend and security engineer. Java, Spring Boot, OAuth2/OIDC, SAP HANA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Angel Stoynov",
+    "jobTitle": "Associate Software Developer",
+    "email": "mailto:an.stoynov@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sofia",
+      "addressCountry": "BG"
+    },
+    "url": "https://stoynovangel.github.io/portfolio/",
+    "sameAs": [
+      "https://github.com/StoynovAngel",
+      "https://www.linkedin.com/in/angel-stoynov/"
+    ],
+    "knowsAbout": [
+      "Java",
+      "Spring Boot",
+      "OAuth2",
+      "OIDC",
+      "SAML",
+      "Application Security",
+      "SAP HANA"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top__inner">
+      <a class="mark" href="#top" aria-label="Angel Stoynov home">AS</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certs</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="top__links">
+        <a href="https://github.com/StoynovAngel" rel="me noopener">GitHub</a>
+        <a href="#" data-link="linkedin" rel="me noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <p class="hero__role reveal" style="--d:0">Associate Software Developer</p>
+            <h1 class="hero__name">
+              <span class="hero__line reveal" style="--d:1">Angel</span>
+              <span class="hero__line hero__line--cut reveal" style="--d:2">Stoynov</span>
+            </h1>
+            <p class="hero__lead reveal" style="--d:3">Backend and security engineer in Java, Spring Boot, and OAuth2/OIDC. Rigorous reviewer with a sharp eye for vulnerabilities, now pursuing a Master's in AI Engineering.</p>
+          </div>
+          <figure class="hero__photo-panel reveal" style="--d:2">
+            <picture>
+              <source srcset="assets/angel.webp" type="image/webp" />
+              <img class="hero__photo" src="assets/angel.jpg" alt="Angel Stoynov" width="760" height="977" loading="eager" decoding="async" onerror="this.closest('.hero__photo-panel').style.display='none'" />
+            </picture>
+          </figure>
+        </div>
+        <dl class="hero__meta reveal" style="--d:4">
+          <div><dt>Based in</dt><dd>Sofia, Bulgaria</dd></div>
+          <div><dt>Focus</dt><dd>Identity, auth, application security</dd></div>
+          <div><dt>Now</dt><dd>SAP Labs · Master's in AI Engineering</dd></div>
+        </dl>
+        <div class="hero__cta reveal" style="--d:5">
+          <a class="btn btn--solid js-copy-email" href="mailto:an.stoynov@gmail.com" data-email="an.stoynov@gmail.com">an.stoynov@gmail.com</a>
+          <a class="btn" href="tel:+359890504411">+359 89 050 4411</a>
+          <a class="btn btn--accent" href="assets/angel-cv.pdf" download="Angel-Stoynov-CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="band" id="work">
+      <div class="wrap">
+        <h2 class="h-section sr"><span class="tick"></span>Work</h2>
+
+        <article class="role sr">
+          <div class="role__head">
+            <div>
+              <h3 class="role__title">Associate Software Developer</h3>
+              <p class="role__org">SAP Labs</p>
+              <p class="role__stack">XSUAA-for-XSA, SBSS · Java 21 · Spring Boot · SAP HANA</p>
+            </div>
+            <p class="role__when">Dec 2025 — Present</p>
+          </div>
+          <ul class="role__points">
+            <li>Shipped CSRF protection for the hana-oidc module, covering X.509 and Kerberos flows.</li>
+            <li>Migrated the SBSS and XSUAA repositories to Java 21.</li>
+            <li>Patched a CVE in the production OIDC identity layer.</li>
+            <li>Fixed an OIDC X.509 config property mismatch and resolved an infrastructure regression.</li>
+            <li>Assumed and migrated the SBSS CI/CD toolchain; wired JaCoCo coverage into the main pipeline.</li>
+            <li>Added Flyway retry logic for DB shortage during UAA startup.</li>
+            <li>Applied PSL-1 branch protection across five repositories.</li>
+            <li>Authored SAP Notes, platform-role docs for help.sap.com, and developer guides.</li>
+          </ul>
+        </article>
+
+        <article class="role sr">
+          <div class="role__head">
+            <div>
+              <h3 class="role__title">Intern Software Developer</h3>
+              <p class="role__org">SAP Labs</p>
+              <p class="role__stack">XSUAA-for-XSA · Java 21 · Spring Boot · SAP HANA</p>
+            </div>
+            <p class="role__when">Jun 2025 — Nov 2025</p>
+          </div>
+          <ul class="role__points">
+            <li>Identified a username-validation bypass in the HANA database.</li>
+            <li>Built a paginated REST endpoint consumed by the XSA Cockpit.</li>
+            <li>Fixed a SAML provider name being overwritten on UAA restart.</li>
+            <li>Fixed a user-caching bug that produced stale auth state.</li>
+            <li>Decomposed a monolithic servlet initializer.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="band band--alt" id="skills">
+      <div class="wrap">
+        <h2 class="h-section sr"><span class="tick"></span>Skills</h2>
+        <div class="skills" id="skills-grid"><!-- rendered by script.js --></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="band" id="projects">
+      <div class="wrap">
+        <h2 class="h-section sr"><span class="tick"></span>Selected Work</h2>
+        <p class="band__note sr">
+          Most of my work is enterprise software built inside SAP, so the source is private and not something I can link to publicly. The cards below describe those systems; the last one is my personal diploma project, which is open source.
+        </p>
+        <div class="projects" id="projects-grid"><!-- rendered by script.js --></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="band band--alt" id="certs">
+      <div class="wrap">
+        <h2 class="h-section sr"><span class="tick"></span>Certifications</h2>
+        <p class="band__note sr">Courses and credentials, most earned this year while moving deeper into AI engineering. Click any card to open the certificate.</p>
+        <div class="cert-strip" id="cert-strip" role="list"><!-- rendered by script.js --></div>
+      </div>
+    </section>
+
+    <!-- ABOUT / EDUCATION / CERTS -->
+    <section class="band" id="about">
+      <div class="wrap about">
+        <div class="about__col">
+          <h2 class="h-section sr"><span class="tick"></span>Education</h2>
+          <article class="line-item sr">
+            <h3>Computer Science — Bachelor's</h3>
+            <p class="line-item__org">Technical University of Sofia</p>
+            <p class="line-item__when">2022 — 2026</p>
+          </article>
+          <article class="line-item sr">
+            <h3>AI Engineering — Master's</h3>
+            <p class="line-item__org">Technical University of Sofia</p>
+            <p class="line-item__when">2026 — 2027</p>
+          </article>
+        </div>
+
+        <div class="about__col">
+          <h2 class="h-section sr"><span class="tick"></span>Honors</h2>
+          <article class="line-item sr">
+            <h3>Cambridge Advanced English (CAE)</h3>
+            <p class="line-item__org">Cambridge University Press</p>
+            <p class="line-item__when">Apr 2024 · ID B5341854</p>
+          </article>
+        </div>
+
+        <div class="about__col">
+          <h2 class="h-section sr"><span class="tick"></span>Languages</h2>
+          <article class="line-item sr">
+            <h3>Bulgarian</h3>
+            <p class="line-item__org">Native</p>
+          </article>
+          <article class="line-item sr">
+            <h3>English</h3>
+            <p class="line-item__org">Fluent — Cambridge Advanced (CAE)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p class="foot__name">Angel Stoynov</p>
+      <div class="foot__links">
+        <a href="mailto:an.stoynov@gmail.com">an.stoynov@gmail.com</a>
+        <a href="https://github.com/StoynovAngel" rel="me noopener">github.com/StoynovAngel</a>
+        <a href="#" data-link="linkedin" rel="me noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

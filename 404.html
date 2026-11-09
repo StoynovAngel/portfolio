@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Angel Stoynov</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root { --bg:#0A0A0B; --ink:#F5F5F4; --muted:#9B9BA0; --violet:#A371F7; --pink:#FF318C; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center;
+      background:var(--bg); color:var(--ink);
+      font-family:"Inter",system-ui,sans-serif; text-align:center; padding:24px;
+    }
+    .code {
+      font-family:"Space Grotesk",system-ui,sans-serif; font-weight:700;
+      font-size:clamp(80px,20vw,180px); line-height:1; letter-spacing:-0.04em;
+      background:linear-gradient(115deg,var(--violet),var(--pink));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      margin:0 0 8px; padding-bottom:0.1em;
+    }
+    p { color:var(--muted); font-size:18px; margin:0 0 28px; }
+    a {
+      font-family:"JetBrains Mono",ui-monospace,monospace; font-size:14px;
+      color:var(--ink); text-decoration:none; border:1px solid #3A3A40; padding:13px 20px;
+      transition:border-color .15s;
+    }
+    a:hover { border-color:var(--ink); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">404</p>
+    <p>That page does not exist.</p>
+    <a href="/">Back to home</a>
+  </main>
+</body>
+</html>
