@@ -32,6 +32,7 @@ const SKILL_GROUPS = [
     items: [
       { name: 'Jenkins', level: 'adv' },
       { name: 'Docker', level: 'adv' },
+      { name: 'GitHub Actions', level: 'fund' },
       { name: 'Azure', level: 'fund' },
     ],
   },
@@ -86,7 +87,7 @@ const PROJECTS = [
     badgeModifier: '',
     module: 'Personal project',
     desc: 'My diploma project: a vehicle-ordering platform with two front ends - a React Native mobile app for customers to order different types of vehicles, and a web admin panel where staff process those orders. Java / Spring Boot back end, containerised with Docker. The one project here whose source is fully open, with the API surface browsable online.',
-    tags: ['TypeScript', 'Java', 'Spring Boot', 'Docker'],
+    tags: ['React Native', 'TypeScript', 'Java', 'Spring Boot', 'Docker'],
     links: [
       { label: 'Source', url: 'https://github.com/StoynovAngel/AutoNow' },
       { label: 'API docs', url: 'https://stoynovangel.github.io/AutoNow/' },
