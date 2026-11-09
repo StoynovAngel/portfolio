@@ -292,9 +292,8 @@ a { color: inherit; text-decoration: none; }
 .cert {
   scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px;
   min-height: 150px; padding: 22px 20px; background: var(--bg);
-  border: 1px solid var(--line); transition: border-color .18s, transform .18s;
+  border: 1px solid var(--line);
 }
-.cert:hover { border-color: var(--violet); transform: translateY(-3px); }
 .cert__issuer { font-family: var(--f-mono); font-size: 12px; color: var(--green); }
 .cert__title { font-family: var(--f-display); font-weight: 600; font-size: 17px; line-height: 1.25; letter-spacing: -0.01em; color: var(--ink); }
 .cert__foot { margin-top: auto; font-family: var(--f-mono); font-size: 12px; color: var(--faint); }

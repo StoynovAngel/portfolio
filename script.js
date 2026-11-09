@@ -95,14 +95,14 @@ const PROJECTS = [
 ];
 
 const CERTS = [
-  { title: 'Google AI Professional Certificate', issuer: 'Google · Coursera', date: 'Oct 2026', note: '8-course program', file: 'assets/certs/google-ai-professional.pdf' },
-  { title: 'Google AI Fundamentals', issuer: 'Coursera', date: 'Oct 2026', note: 'Credly badge', file: 'assets/certs/google-ai-fundamentals.pdf' },
-  { title: 'Google AI for App Building', issuer: 'Coursera', date: 'Oct 2026', note: 'Credly badge', file: 'assets/certs/google-ai-app-building.pdf' },
-  { title: 'Introduction to Generative AI Hub in SAP AI Core', issuer: 'SAP', date: 'Nov 2026', note: '', file: 'assets/certs/sap-genai-hub.pdf' },
-  { title: 'Delivering Responsible AI at SAP', issuer: 'SAP', date: 'Nov 2026', note: 'Ethics, security, compliance', file: 'assets/certs/sap-responsible-ai.pdf' },
-  { title: 'Efficient AI Development: A Token-Conscious Approach', issuer: 'SAP', date: 'Nov 2026', note: '', file: 'assets/certs/sap-efficient-ai.pdf' },
-  { title: 'Joule Work Desktop - Your AI Assistant', issuer: 'SAP', date: 'Nov 2026', note: '', file: 'assets/certs/sap-joule-desktop.pdf' },
-  { title: 'Introduction to Python', issuer: 'JetBrains', date: 'Nov 2026', note: '', file: 'assets/certs/jetbrains-python.pdf' },
+  { title: 'Google AI Professional Certificate', issuer: 'Google · Coursera', date: 'Oct 2026', note: '8-course program' },
+  { title: 'Google AI Fundamentals', issuer: 'Coursera', date: 'Oct 2026', note: 'Credly badge' },
+  { title: 'Google AI for App Building', issuer: 'Coursera', date: 'Oct 2026', note: 'Credly badge' },
+  { title: 'Introduction to Generative AI Hub in SAP AI Core', issuer: 'SAP', date: 'Nov 2026', note: '' },
+  { title: 'Delivering Responsible AI at SAP', issuer: 'SAP', date: 'Nov 2026', note: 'Ethics, security, compliance' },
+  { title: 'Efficient AI Development: A Token-Conscious Approach', issuer: 'SAP', date: 'Nov 2026', note: '' },
+  { title: 'Joule Work Desktop - Your AI Assistant', issuer: 'SAP', date: 'Nov 2026', note: '' },
+  { title: 'Introduction to Python', issuer: 'JetBrains', date: 'Nov 2026', note: '' },
 ];
 
 const setLinkedInLinks = () =>
@@ -166,11 +166,11 @@ const renderCerts = () => {
   const strip = document.getElementById('cert-strip');
   if (!strip) return;
   strip.innerHTML = CERTS.map(
-    (cert) => `<a class="cert" role="listitem" href="${cert.file}" target="_blank" rel="noopener">
+    (cert) => `<div class="cert" role="listitem">
   <span class="cert__issuer">${cert.issuer}</span>
   <span class="cert__title">${cert.title}</span>
   <span class="cert__foot">${cert.date}${cert.note ? ` · ${cert.note}` : ''}</span>
-</a>`
+</div>`
   ).join('');
 };
 
